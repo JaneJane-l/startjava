@@ -18,5 +18,4 @@ public class Variable {
 		System.out.println(processor);
 		System.out.println(isWorking);
 	}
-	
 }
