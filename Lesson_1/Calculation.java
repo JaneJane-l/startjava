@@ -1,16 +1,17 @@
 public class Calculation {
 	public static void main(String[] args) {
-		int firstNumber = 0;
-		int secondNumber = 3;
+		int firstNumber = 1;
+		int secondNumber = 0;
 		char operation ='^';
 		int result = 0;
-		if (operation == '/' && secondNumber != 0) {
-			result = firstNumber / secondNumber;
-		} else if (operation == '/' && secondNumber == 0) {
-			System.out.println("None");
-			return;
-		}
-		if (operation == '+') {
+
+		if (operation == '/') {
+			if (secondNumber != 0) {
+				result = firstNumber / secondNumber;
+			} else {
+				System.out.println("None");
+			}
+		} else if (operation == '+') {
 			result = firstNumber + secondNumber;
 		} else if (operation == '-') {
 			result = firstNumber - secondNumber;
@@ -18,13 +19,9 @@ public class Calculation {
 			result = firstNumber * secondNumber;
 		} else if (operation == '^') {
 			result = 1;
-			if (secondNumber == 0)
-				result = 1;
-			else {
-				for (int i = 1; i <= secondNumber; i++) {
-					result *= firstNumber;
-				}
-			} 	
+			for (int i = 1; i <= secondNumber; i++) {
+				result *= firstNumber;
+			}
 		} else if (operation == '%') {
 			result = firstNumber % secondNumber;
 		}

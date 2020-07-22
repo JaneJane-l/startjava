@@ -1,16 +1,16 @@
 public class GuessNumber {
 	public static void main(String[] args) {
-		int yourNum = 8;
+		int playerNum = 8;
 		int guessNum = 10;
-		while (yourNum != guessNum) {
-			if (guessNum > yourNum) {
-				System.out.println("Your number "+ yourNum + " more than computer number");
-				yourNum += 1;
+		while (playerNum != guessNum) {
+			if (guessNum > playerNum) {
+				System.out.println("Your number " + playerNum + " more than computer number");
+				playerNum++;
 			} else {
-				System.out.println("Your number " + yourNum + " less than computer number");	
-				yourNum -= 1;
+				System.out.println("Your number " + playerNum + " less than computer number");	
+				playerNum--;
 			}
 		}
-		System.out.println("You guess! Computer number is " + yourNum);
+		System.out.println("You guess! Computer number is " + playerNum);
 	}
 }

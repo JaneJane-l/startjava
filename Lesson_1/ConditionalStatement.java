@@ -6,24 +6,23 @@ public class ConditionalStatement {
 	  	}
 
 	  	boolean isMale = false;
-	  	if (isMale == false) {
-	  		System.out.println("Notmale");
+	  	if (isMale) {
+	  		System.out.println("male");
 	  	} else {
-			System.out.println("male");
+			System.out.println("notMale");
 	  	}
 
 	  	float height = 1.6f;
-	  	boolean isHigh = height >= 1.8f;
-	  	if (isHigh == true) {
+	  	if (height >= 1.8f) {
 	  		System.out.println("High");
 	  	} else {
 	  		System.out.println("Load");
 	  	}
 
-	  	char firstLetter = 'J';
-	  	if (firstLetter =='M') {
+	  	char firstNameLetter = 'J';
+	  	if (firstNameLetter =='M') {
 	  		System.out.println("Name M!");
-	  	} else if (firstLetter == 'I') {
+	  	} else if (firstNameLetter == 'I') {
 	  		System.out.println("Name I!");
 	  	} else {
 	  		System.out.println ("Other letter");
