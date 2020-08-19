@@ -18,7 +18,7 @@ public class CalculationTest {
 
 			Calculation calculator = new Calculation();
 
-			int result = calculator.calculate(firstNumber, secondNumber, operation);
+			int result = calculator.calculate();
 
 			System.out.println("Result "+result);
 

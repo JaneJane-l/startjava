@@ -1,6 +1,21 @@
 public class Calculation {
+	private int firstNumber;
+	private char operation;
+	private int secondNumber;
 
-	public int calculate(int firstNumber, int secondNumber, char operation) {
+	public void setFirstNumber(int firstNumber) {
+		this.firstNumber = firstNumber;
+	}
+
+	public void setSecondNumber(int secondNumber) {
+		this.secondNumber = secondNumber;
+	}
+
+	public void setOperation(char operation) {
+		this.operation = operation;
+	}
+
+	public void calculate(int firstNumber, int secondNumber, char operation) {
 		int result = 0;
 		switch (operation) {
 			case '/': 
@@ -32,6 +47,5 @@ public class Calculation {
 				System.out.println("Unknown operation");
 				break;
 		}
-		return result;
 	}
 }
